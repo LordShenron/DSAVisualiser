@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,500;0,600;0,800;1,300;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+body {
+    margin: 0;
+    background-color: #141519;
+}
+.card {
+    background: linear-gradient(to top, #191d23, #232a34);
+    width: 90%;
+    max-width: 90%;
+    padding: 30px;
+    border-radius: 30px;
+    flex-direction:row;
+    justify-content: center;
+    margin: 2%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+header span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    border-radius: 50%;
+    height: 48px;
+    background-color: hsl(210, 20%, 20%);
+}
+header span img {
+    width: 20px;
+    height: 20px;
+}
+.card h3 {
+    margin: 20px 0 10px 0;
+    color: #fefefe;
+    font-size: 28px;
+}
+.card p {
+    color: #8d94a3;
+    font-size: 15px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+.row {margin: 0 -5px;}
+  
+.row:after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+  
+  @media screen and (max-width: 600px) {
+.column {
+      width: 100%;
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+button {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: #f97618;
+    color: #141519;
+    cursor: pointer;
+    transition: 0.3s background-color;
+}
+button:hover {
+    background-color: #fff;
+    color: #f97618;
+}
+
+.topnav {
+    overflow: hidden;
+    background: linear-gradient(to top, #191d23, #232a34);
+    min-height: 60px !important;
+    height: 60px !important;
+    max-height: 60px !important;  
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    min-height: 60px !important;
+    height: 60px !important;
+    max-height: 60px !important;  
+  }
+  
+  .topnav a.active {
+    background-color: hsl(204, 80%, 45%);
+    color: white;
+  }
+  
+ 
