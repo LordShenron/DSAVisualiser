@@ -311,7 +311,8 @@ li {
 }
 #infos {
   position: absolute;
-  background-color: white;
+background-color:#F0F0F0;
+opacity:0.8;
   width: 350px;
   height: 60px;
   text-align: center;

@@ -24,7 +24,7 @@ function leaveinfotab ()  {
 infotabelement.addEventListener("mouseenter" , () => {
 
     document.getElementById("infos").style.transition = "300ms";
-    document.getElementById("infos").style.left = "250px";
+    // document.getElementById("infos").style.left = "250px";
 
   })
 
@@ -47,7 +47,7 @@ infotabelement.addEventListener("mouseenter" , () => {
 
       infotabelement.removeEventListener("mouseleave",leaveinfotab)
 
-      arrowpointer.style.transform = "rotate(90deg)"
+      // arrowpointer.style.transform = "rotate(90deg)"
 
       commandlistelement.style.display = "";
 
@@ -81,7 +81,7 @@ infotabelement.addEventListener("mouseenter" , () => {
 
 
       setTimeout(()=> {
-        infotabelement.style.top = "40%";
+        infotabelement.style.top = "17%";
         commandlistelement.style.display = "none"
 
       },100)
@@ -195,7 +195,7 @@ codehere.addEventListener("mouseenter" , function()  {
   arrowpointer.style.transform = "rotate(0deg)"
 
       setTimeout(()=> {
-        infotabelement.style.top = "40%";
+        infotabelement.style.top = "17%";
         commandlistelement.style.display = "none"
 
       },100)

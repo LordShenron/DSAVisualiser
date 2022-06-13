@@ -49,7 +49,7 @@ codehere.placeholder ="Type here & Press Enter key."
 var arrowpointer = document.getElementById("infos").childNodes[1];
 arrowpointer.style.transition = "200ms"
 
-document.getElementById("infos").childNodes[0].innerText = "Code List";
+document.getElementById("infos").childNodes[0].innerText = "Instructions";
 
 
 
@@ -57,7 +57,7 @@ document.body.insertAdjacentHTML("afterbegin",`<img id="pointerarrow" src="../po
 var pointerarrow = document.getElementById("pointerarrow")
 pointerarrow.style.display="none";
 
-log.insertAdjacentHTML("afterbegin",'<p style="font-size:x-large; margin-top:-5px;  color:rgb(255,0,0, 0.7);font-family:Segoe UI;">'+ "Steps..." +'</p>')
+log.insertAdjacentHTML("afterbegin",'<p style="font-size:x-large; margin-top:-5px;  color:#F0F0F0; margin-bottom:0;font-family:Segoe UI;">'+ "Steps..." +'</p>')
 
 
 document.body.insertAdjacentHTML("afterbegin",`<p id="iindex" style="position:absolute; transition-duration : 500ms; top:-200px; font-size:150%; font-family:'segoe ui'; ">i</p>`)
@@ -552,7 +552,7 @@ logscreen.scrollTop = logscreen.scrollHeight;
 
 function Output (data)  {
 
-$("#log1").append('<br><p style="font-size:large; margin-top:-5px;  color:rgb(0,0,255, 0.7);font-family:consolas;">'+ data +'</p>')
+$("#log1").append('<br><p style="font-size:large; margin-top:-5px;  color:#8ab6d6;font-family:consolas;">'+ data +'</p>')
 
 logscreen.scrollTop = logscreen.scrollHeight;
 

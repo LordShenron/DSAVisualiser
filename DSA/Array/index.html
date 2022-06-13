@@ -11,18 +11,32 @@
       <script src="../Scripts/jquery.js"></script>
       <script src="../Scripts/jquery-ui.js"></script>
       <script src="../Scripts/Line.js"></script>
+      <style media="screen">
+        body{
+          background-image: url('https://media.istockphoto.com/photos/gray-abstract-background-picture-id1148888540?b=1&k=20&m=1148888540&s=170667a&w=0&h=VhBF89ykDrVxseML6ZtHXMh8mFzo9Ht-tgo5MTUYhrE=');
+          background-size: cover;
+          position: fixed;
+        }
+        .log p{
+          color:#EFEFEF;
+          font-weight:600;
+        }
+        .uncaps{
+          color:black;
+        }
+      </style>
    </head>
    <body>
-   
+
       <input id ="codetype" spellcheck="false" type="text" placeholder="Type commands here"/>
       <div class="log" id="log1" style="position: fixed;">
       </div>
       <div class="footer" style="display: none;">
          <p id="feed" class="uncaps" style=" opacity:100%; color: white; margin-top: -10px; font-size: 120%; text-shadow: 0 0 3px #FF0000; "> </p>
       </div>
-      <div id="infotab" style="position: absolute; z-index: 0; position: fixed; top: 40%; left: -300px; width: auto; height: auto;transition: 300ms;">
+      <div id="infotab" style="position: absolute; z-index: 0; position: fixed; top: 17%; left: -100px; width: auto; height: auto;transition: 300ms;">
          <div id="infos"style=" top:0 ; left:0;" >
-            <p style="position: absolute; font-size:xx-large; margin-top:5px; margin-left: 120px; color:#3282b8;font-family:Segoe UI; cursor:default;">Codes();</p>
+            <p style="position: absolute; font-size:xx-large; margin-top:5px; margin-left: 120px; color:#3282b8;font-family:Segoe UI; cursor:default;">Instructions</p>
             <img src="../images/info.png" style="position: absolute;height: 40px; width: 40px; left: 300px; top: 10px;" >
          </div>
       </div>
@@ -57,7 +71,7 @@
                </div>
                <!-- <p  style="font-size: 85%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: -12px;margin-top: 20px;">Binary search on array.</p>
                <div class="commandcopy">
-                  <p>BinarySearch(item)</p> 
+                  <p>BinarySearch(item)</p>
                </div> -->
                <p  style="font-size: 85%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: -12px;margin-top: 20px;">Insert value in array.</p>
                <div class="commandcopy">
@@ -102,7 +116,7 @@
          <input type="range" min="1" max="100" value="50" class="slider" id="animation-speed" style="transform: rotate(-90deg);">
       </div>
 
-      
+
       <!--play and pause button-->
       <img id = "play-btn" src="../images/playbtn.png"  style= "position:fixed; margin-top:35%; right:290px; width: 70px; border-radius: 100%; "/>
       <img id = "pause-btn" src="../images/clock.png"  style= "position:fixed; margin-top:35%; right:200px; width: 70px; border-radius: 100%;"/>
@@ -117,4 +131,3 @@
       <script src="../Scripts/Algorithm/stack.js"></script>
    </body>
 </html>
-
